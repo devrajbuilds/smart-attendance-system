@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# Face recognition data
+dataset/
+
+# Generated face encodings
+encodings.pkl
+
+# Attendance data
+attendance.csv
+
+# Archives / backups
+*.zip
+
+# Environment / secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
