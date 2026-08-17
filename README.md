@@ -91,7 +91,7 @@ The system captures student face data during registration, generates facial enco
                                       Attendance Confirmation
                                                 │
                                                 ▼
-                                      Save to attendance.csv
+                                      Save to attendance.csv ```
 
 ## 🔄 System Workflow
 
