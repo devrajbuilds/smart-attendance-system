@@ -91,9 +91,12 @@ The system captures student face data during registration, generates facial enco
                                       Attendance Confirmation
                                                 │
                                                 ▼
-                                      Save to attendance.csv ```
+                                      Save to attendance.csv
+````
 
-## 🔄 System Workflow
+---
+
+##  🔄 System Workflow
 
 ### 1. Student Registration
 
@@ -118,6 +121,9 @@ These encodings are stored locally in:
 ```text
 encodings.pkl
 The recognition system uses these encodings for future face comparisons.
+```
+
+---
 
 ### 3. Attendance Session
 
@@ -132,6 +138,7 @@ Detected faces are compared with registered face encodings.
 Stable detections are counted during attendance checks.
 Students meeting the required presence threshold are marked present.
 
+---
 
 ### 4. Attendance Storage
 
@@ -146,6 +153,7 @@ Name,Timestamp
 The system prevents the same student from receiving multiple attendance entries on the same day.
 
 ## 📁 Project Structure
+````text
 Smart-Attendance-System/
 │
 ├── dataset/                # Local face dataset (not uploaded)
@@ -160,6 +168,7 @@ Smart-Attendance-System/
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Files excluded from Git
 └── README.md               # Project documentation
+````
 
 ## ⚙️ Installation
 Prerequisites
@@ -187,7 +196,7 @@ python main.py
 
 The Smart Attendance System dashboard will open.
 
-## 👤 Registering a Student
+### 👤 Registering a Student
 Click Register Student.
 Enter the student's name.
 Allow camera access.
@@ -195,7 +204,7 @@ Follow the capture instructions.
 Capture the required face images.
 The system processes the captured data for recognition.
 
-## 📷 Starting Attendance
+### 📷 Starting Attendance
 Ensure students have been registered.
 Start the attendance session.
 The system loads the saved face encodings.
@@ -203,7 +212,8 @@ The webcam begins monitoring the classroom.
 Random attendance checks are performed.
 Recognized students are counted across the checks.
 Students satisfying the configured presence requirement are marked present.
-🔐 Privacy & Data Handling
+
+### 🔐 Privacy & Data Handling
 
 This repository does not contain real student face datasets, attendance records, or generated facial encoding data.
 
@@ -241,13 +251,12 @@ Potential improvements include:
 
 The objective of this project is to develop a practical and automated attendance system that reduces manual attendance effort while using facial recognition and multiple verification checks to improve attendance reliability.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Devraj Builds
 
 GitHub: @devrajbuilds
 
-📜 License
+## 📜 License
 
 This project is developed for educational and academic purposes.
-````
